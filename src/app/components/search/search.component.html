@@ -1,0 +1,13 @@
+<h1>Search Heroes</h1>
+<div class="card-columns">
+    <div class="card" *ngFor="let heroe of search">
+        <img [src]="heroe.img" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{heroe.nombre}}</h5>
+            <p class="card-text">{{heroe.bio}}</p>
+            <p class="card-text"><small class="text-muted">{{heroe.aparicion}}</small></p>
+            <!-- <button type="button" (click)="verHeroe(i)" class="btn btn-primary">Ver mas</button> -->
+            <!-- <a routerLink="['/heroe',i]" class="btn btn-primary">ver mas..</a> -->
+        </div>
+    </div>
+</div>
